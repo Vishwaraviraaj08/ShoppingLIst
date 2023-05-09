@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 45rem;
+    margin-top: 8rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+    padding: 2rem;
+}
+
+.section-center:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.alert {
+    margin-bottom: 1rem;
+    height: 1.25rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 0.25rem;
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+}
+
+.alert-danger {
+    color: #721c24;
+    background: #f8d7da;
+}
+
+.alert-success {
+    color: #155724;
+    background: #d4edda;
+}
+
+.shopping-form h2 {
+    color: hsl(205, 86%, 17%);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    background-color: transparent;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+}
+
+#shopping {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: hsl(210, 36%, 96%);
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    color: hsl(210, 22%, 49%);
+}
+
+#shopping::placeholder {
+    font-family: "Open Sans", sans-serif;
+    color: hsl(210, 22%, 49%);
+}
+
+.submit-btn {
+    background: hsl(205, 86%, 81%);
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    cursor: pointer;
+    /*content: #4283af;*/
+    transition: all 0.3s linear;
+    font-size: 0.85rem;
+}
+
+.submit-btn:hover {
+    background: #49a6e9;
+    color: #fff;
+}
+
+.shopping-container {
+    margin-top: 2rem;
+    transition: all 0.3s linear;
+    visibility: hidden;
+}
+
+.show-container {
+    visibility: visible;
+}
+
+.shopping-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: 0.5rem;
+    text-transform: capitalize;
+}
+
+.shopping-item:hover {
+    color: hsl(210, 22%, 49%);
+    background: hsl(210, 36%, 96%);
+}
+
+.shopping-item:hover .title {
+    color: hsl(210, 22%, 49%);
+}
+
+.title {
+    margin-bottom: 0;
+    color: hsl(209, 61%, 16%);
+    letter-spacing: 2px;
+    transition: all 0.3s linear;
+}
+
+.edit-btn,
+.delete-btn {
+    background: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin: 0 0.15rem;
+    transition: all 0.3s linear;
+}
+
+.edit-btn {
+    color: hsl(125, 71%, 66%);
+}
+
+.edit-btn:hover {
+    color: hsl(125, 67%, 44%);
+}
+
+.delete-btn {
+    color: hsl(360, 71%, 66%);
+}
+
+.delete-btn:hover {
+    color: hsl(360, 67%, 44%);
+}
+
+.clear-btn {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(360, 71%, 66%);
+    margin: 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 1.25rem;
+}
+
+.clear-btn:hover {
+    color: hsl(360, 67%, 44%);
+}
+
+/*make the background as blue black gradient*/
+body {
+    background: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+    background-blend-mode: color;
+}
+
+
+
+html{
+    height: 100%;
+}
