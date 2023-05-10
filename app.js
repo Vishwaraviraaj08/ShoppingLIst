@@ -5,6 +5,7 @@ const submitBtn = document.querySelector(".submit-btn");
 const container = document.querySelector(".shopping-container");
 const list = document.querySelector(".shopping-list");
 const clearBtn = document.querySelector(".clear-btn");
+const downloadBtn = document.querySelector(".download-btn");
 let editElement;
 let editFlag = false;
 let editID = "";
@@ -13,6 +14,7 @@ let editID = "";
 
 form.addEventListener("submit", addItems);
 clearBtn.addEventListener("click", clearItems);
+downloadBtn.addEventListener("click", downloadList);
 window.addEventListener("DOMContentLoaded", setupItems);
 
 
@@ -65,6 +67,19 @@ function clearItems() {
     displayAlert("empty list", "danger");
     setBackToDefault();
     localStorage.removeItem("list");
+}
+
+function downloadList() {
+    const items = document.querySelectorAll(".shopping-item");
+    let data = [];
+    items.forEach((item) => {
+        data.push(item.innerText.trim());
+    });
+    let link = document.createElement("a");
+    link.download = "shopping-list.txt";
+    link.href = "data:text/plain," + data.join("\n");
+    link.click();
+    URL.revokeObjectURL(link.href);
 }
 
 function deleteItem(e) {
