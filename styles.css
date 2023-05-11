@@ -180,6 +180,23 @@ body {
     margin-top: 1.25rem;
 }
 
+.download-btn {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    background: transparent;
+    border-color: transparent;
+    color: hsl(360, 71%, 66%);
+    margin: 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    margin-top: 1.25rem;
+}
+
 .clear-btn:hover {
     color: hsl(360, 67%, 44%);
 }
